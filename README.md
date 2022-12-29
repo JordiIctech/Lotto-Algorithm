@@ -1,5 +1,10 @@
 # Lotto-Algorithm
-Lotto analyzing algorithm
+Lotto analyzing algorithm using Python
+
+## To-Do
+- Import NY Dataset
+- Transform it into readable csv
+- Use pyspark to query data
 
 ## Sources
 - Odds Calculation MM: https://www.flalottery.com/exptkt/megaMillions-Odds.pdf
