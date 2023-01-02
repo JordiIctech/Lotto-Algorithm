@@ -1,6 +1,11 @@
 # Lotto-Algorithm
 Lotto analyzing algorithm using Python
 
+## Tools:
+- Python
+- Spark
+- SQL
+
 ## To-Do
 - Import NY Dataset
 - Transform it into readable csv
