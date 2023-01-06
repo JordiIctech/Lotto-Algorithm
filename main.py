@@ -1,13 +1,13 @@
-import pyspark
-from pyspark.sql import SparkSession
-from pyspark.context import SparkContext
+from SS import Spark as SS #Imports Spark Session from separate file
+import time
+#====================================================================================================
+start_time = time.time()
+#----------------------------------------------------------------------------------------------------
 
-Spark = SparkSession \
-    .builder \
-    .appName("Python Spark SQL basic example") \
-    .config("spark.some.config.option", "some-value") \
-    .getOrCreate()
-
-df = Spark.read.csv("Data/Lottery_Mega_Millions_Winning_Numbers__Beginning_2002.csv")
+df = SS.read.csv("Data/Lottery_Mega_Millions_Winning_Numbers__Beginning_2002.csv", header='true')
 
 df.show()
+
+#----------------------------------------------------------------------------------------------------
+print("--- %s seconds ---" % round((time.time() - start_time),4))
+#====================================================================================================
