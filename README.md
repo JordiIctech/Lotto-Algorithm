@@ -7,9 +7,8 @@ Lotto analyzing algorithm using Python
 - SQL
 
 ## To-Do
-- Import NY Dataset
-- Transform it into readable csv
-- Use pyspark to query data
+- Separate winning numbers into individual columns
+- Remove headers to aid step 1
 
 ## Sources
 - Exportable MM: https://data.ny.gov/Government-Finance/Lottery-Mega-Millions-Winning-Numbers-Beginning-20/5xaw-6ayf
