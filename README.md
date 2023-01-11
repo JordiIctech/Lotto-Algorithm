@@ -2,8 +2,8 @@
 Lotto analyzing algorithm using Python
 
 ## Tools:
-- Python
-- Spark
+- Python 
+- Spark (Through PySpark)
 - SQL
 
 ## To-Do
