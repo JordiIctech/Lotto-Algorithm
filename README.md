@@ -9,7 +9,6 @@ Lotto analyzing algorithm using Python
 ## To-Do
 - Separate winning numbers into individual columns
 - Remove headers to aid step 1
-- Use SQL "like" to find the individual numbers on the winning numbers column
 
 ## Sources
 - Odds Calculation MM: https://www.flalottery.com/exptkt/megaMillions-Odds.pdf

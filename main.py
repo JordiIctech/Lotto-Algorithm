@@ -9,6 +9,10 @@ df = SS.read.option("delimiter", ",").option("header", "true").csv("Data/Lottery
 
 df.show()
 
+df.createOrReplaceTempView("Test1") 
+
+SS.sql("SELECT * FROM Test1").show()
+
 #----------------------------------------------------------------------------------------------------
 print("--- %s seconds ---" % round((time.time() - start_time),4))
 #====================================================================================================
