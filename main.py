@@ -13,6 +13,10 @@ df.createOrReplaceTempView("Test1")
 
 SS.sql("SELECT * FROM Test1").show()
 
+#df.filter(col("name").like("%rose%")).show()
+
+SS.sql("""SELECT * FROM Test1 WHERE `Mega Ball` LIKE '4' OR `Mega Ball` LIKE '04'""").show()
+
 #----------------------------------------------------------------------------------------------------
 print("--- %s seconds ---" % round((time.time() - start_time),4))
 #====================================================================================================
