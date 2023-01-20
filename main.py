@@ -15,7 +15,14 @@ SS.sql("SELECT * FROM Test1").show()
 
 #df.filter(col("name").like("%rose%")).show()
 
+# Check Mega Ball Numbers
 SS.sql("""SELECT * FROM Test1 WHERE `Mega Ball` LIKE '4' OR `Mega Ball` LIKE '04'""").show()
+
+# Check Winning Number appearances
+SS.sql("""SELECT * FROM Test1 WHERE `Winning Numbers` LIKE '%22%'""").show()
+
+# Count Winning Numbers
+SS.sql("""SELECT Count(`Winning Numbers`) FROM Test1 WHERE `Winning Numbers` LIKE '%54%'""").show()
 
 #----------------------------------------------------------------------------------------------------
 print("--- %s seconds ---" % round((time.time() - start_time),4))
