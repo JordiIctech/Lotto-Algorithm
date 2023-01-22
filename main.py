@@ -22,7 +22,17 @@ SS.sql("""SELECT * FROM Test1 WHERE `Mega Ball` LIKE '4' OR `Mega Ball` LIKE '04
 SS.sql("""SELECT * FROM Test1 WHERE `Winning Numbers` LIKE '%22%'""").show()
 
 # Count Winning Numbers
-SS.sql("""SELECT Count(`Winning Numbers`) FROM Test1 WHERE `Winning Numbers` LIKE '%54%'""").show()
+number = 54
+dfE = SS.sql(f"""SELECT Count(`Winning Numbers`) FROM Test1 WHERE `Winning Numbers` LIKE '%{number}%'""")
+
+dfE.show()
+
+valueE = dfE.head()[0]
+
+print(valueE)
+
+for i in range(5):
+    print(i+1)
 
 #----------------------------------------------------------------------------------------------------
 print("--- %s seconds ---" % round((time.time() - start_time),4))
