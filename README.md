@@ -7,9 +7,9 @@ Lotto analyzing algorithm using Python
 - SQL
 
 ## To-Do
-- Separate winning numbers into individual columns
-- Remove headers to aid step 1
-- Combine all final steps
+- Make the range from 56 to 70
+- Investigate the mega ball number changes
+- Implement mega millions
 
 ## Sources
 - Odds Calculation MM: https://www.flalottery.com/exptkt/megaMillions-Odds.pdf
