@@ -12,6 +12,7 @@ Lotto analyzing algorithm using Python
 - Implement mega millions
 - Make select Menu
 - Display charts for results
+- Fix matplotlib running issues
 
 ## Sources
 - Odds Calculation MM: https://www.flalottery.com/exptkt/megaMillions-Odds.pdf

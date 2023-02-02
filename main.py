@@ -1,5 +1,8 @@
 from SS import Spark as SS #Imports Spark Session from separate file
 import time
+import numpy as np
+import matplotlib.pyplot as plt
+
 #====================================================================================================
 start_time = time.time()
 #----------------------------------------------------------------------------------------------------
@@ -22,6 +25,8 @@ SS.sql("""SELECT * FROM Test1 WHERE `Mega Ball` LIKE '4' OR `Mega Ball` LIKE '04
 SS.sql("""SELECT * FROM Test1 WHERE `Winning Numbers` LIKE '%22%'""").show()
 
 # Count Winning Numbers
+winnerdic = {}
+
 for i in range(0,56):
     
     print(f"Number: {i+1}")
@@ -37,6 +42,8 @@ for i in range(0,56):
     valueE = dfE.head()[0]
     print(f"Count: {valueE}")
 
+    winnerdic[f"{i}"] = {valueE}
+print(winnerdic)
 #----------------------------------------------------------------------------------------------------
 print("--- %s seconds ---" % round((time.time() - start_time),4))
 #====================================================================================================
