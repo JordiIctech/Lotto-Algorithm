@@ -10,6 +10,8 @@ Lotto analyzing algorithm using Python
 - Make the range from 56 to 70
 - Investigate the mega ball number changes
 - Implement mega millions
+- Make select Menu
+- Display charts for results
 
 ## Sources
 - Odds Calculation MM: https://www.flalottery.com/exptkt/megaMillions-Odds.pdf
