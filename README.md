@@ -7,7 +7,7 @@ Lotto analyzing algorithm using Python
 - SQL
 
 ## To-Do
-- Make the range from 56 to 70
+- Make the range from 56 to 70 (Given digits)
 - Investigate the mega ball number changes
 - Implement mega millions
 - Make select Menu
